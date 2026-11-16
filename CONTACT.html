@@ -43,7 +43,10 @@
                             <span>Accra, Ghana</span>
                         </div>
                     </aside>
-                    <form class="form reveal" action="https://formspree.io/f/xwlkvkno" method="POST">
+                    <form class="form reveal" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="c3ba248d-854e-4b84-9bfa-7daccbecfb45">
+                        <input type="hidden" name="subject" value="New message from your portfolio">
+                        <input type="checkbox" name="botcheck" style="display:none">
                         <div class="field">
                             <label for="name">YOUR NAME</label>
                             <input id="name" name="name" required placeholder="Your name">
@@ -58,17 +61,6 @@
                         </div>
                         <button class="button" type="submit">Send message →</button>
                         <p class="form-status" aria-live="polite"></p>
-                        <form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="c3ba248d-854e-4b84-9bfa-7daccbecfb45">
-  <input type="hidden" name="subject" value="New message from your portfolio">
-
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-
-  <input type="checkbox" name="botcheck" style="display:none">  <!-- spam trap -->
-  <button type="submit">Send message →</button>
-</form>
                     </form>
                 </section>
             </main>
